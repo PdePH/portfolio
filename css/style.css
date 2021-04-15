@@ -1,3 +1,62 @@
+/* root */
+
 body {
 font-family: 'Mukta', sans-serif;
+font-size: 1em;
+line-height: normal;
+}
+
+:root {
+    --main-color: #EA9010;
+    --second-color: #37371F;
+    --third-color: #3A4042;
+    }
+
+/* header */
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.main-header {
+    background-color: var(--second-color);
+    padding: 0.625rem 0;
+    width: 100%;
+    border-bottom: 0.625rem solid #000;
+}
+
+.main-action, .download-button {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1.875rem;
+}
+
+.download-button {
+    background-color: var(--main-color);
+    padding: 0 0.625rem;
+    box-shadow: 0.1875rem 0.1875rem 0px #000;
+}
+
+.download-button:hover {
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+.main-action::before {
+    content: "";
+    background-color: var(--main-color);
+    width: 0.625rem;
+    height: 0.625rem;
+    margin-right: 0.625rem;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
