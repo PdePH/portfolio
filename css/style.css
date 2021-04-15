@@ -1,8 +1,8 @@
 /* root */
 
-body {
+html {
 font-family: 'Mukta', sans-serif;
-font-size: 1em;
+font-size: 62.5%; /* 10px */
 line-height: normal;
 }
 
@@ -10,6 +10,28 @@ line-height: normal;
     --main-color: #EA9010;
     --second-color: #37371F;
     --third-color: #3A4042;
+    }
+
+/* queries */
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 46.875%; /* 7.5px */
+        }
+        img {
+            max-width: 3rem;
+            max-height: 3rem;
+        }
+    }
+    
+    @media (max-width: 425px) {
+        html {
+            font-size: 31.25%; /* 5px */
+        }
+        img {
+            max-width: 3rem;
+            max-height: 3rem;
+        }
     }
 
 /* header */
@@ -20,25 +42,25 @@ line-height: normal;
 
 .main-header {
     background-color: var(--second-color);
-    padding: 0.625rem 0;
+    padding: 1rem 0;
     width: 100%;
-    border-bottom: 0.625rem solid #000;
+    border-bottom: 1rem solid #000;
 }
 
 .main-action, .download-button {
     display: inline-flex;
     align-items: center;
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
-    margin-right: 1.875rem;
+    margin-right: 2rem;
 }
 
 .download-button {
     background-color: var(--main-color);
-    padding: 0 0.625rem;
-    box-shadow: 0.1875rem 0.1875rem 0px #000;
+    padding: 0 1rem;
+    box-shadow: 0.5rem 0.5rem 0.2rem #000;
 }
 
 .download-button:hover {
@@ -49,9 +71,9 @@ line-height: normal;
 .main-action::before {
     content: "";
     background-color: var(--main-color);
-    width: 0.625rem;
-    height: 0.625rem;
-    margin-right: 0.625rem;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
 }
 
 .header-wrapper {
@@ -59,4 +81,6 @@ line-height: normal;
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    align-items: center;   
 }
+
