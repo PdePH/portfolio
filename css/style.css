@@ -1,4 +1,4 @@
-/* root */
+/*======= root ========*/
 
 html {
 font-family: 'Mukta', sans-serif;
@@ -16,7 +16,7 @@ h2, h3 {
     --third-color: #3A4042;
     }
 
-/* queries */
+/*======= queries =======*/
 
     @media (max-width: 768px) {
         html {
@@ -38,30 +38,64 @@ h2, h3 {
         }
     }
 
-/* header */
+/*======= header =======*/
 
 .logo:hover {
     transform: scale(1.1);
 }
 
-.main-header {
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--second-color);
-    padding: 1rem 0;
     width: 100%;
-    border-bottom: 1rem solid #000;
+    border-bottom: 1rem solid #000;    
 }
 
-.main-action, .main-button {
-    display: inline-flex;
-    align-items: center;
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-decoration: none;
+.header-container img {
+    margin-left: 2rem;
+    max-height: 3.2rem;
+}
+
+.menu-section nav {
     margin-right: 2rem;
 }
 
+.menu-section nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-section nav ul li {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2rem;
+     
+}
+
+.menu-section nav ul li a {
+    color:#fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-section nav ul li::before {
+    content: "";
+    background-color: var(--main-color);
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+}
+
 .main-button {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
     background-color: var(--main-color);
     padding: 0 1rem;
     box-shadow: 0.5rem 0.5rem 0.2rem #000;
@@ -72,23 +106,7 @@ h2, h3 {
     background-color: #fff;
 }
 
-.main-action::before {
-    content: "";
-    background-color: var(--main-color);
-    width: 1rem;
-    height: 1rem;
-    margin-right: 1rem;
-}
-
-.header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    align-items: center;   
-}
-
-/* banner */
+/*======== banner ========*/
 
 .main-banner {
     box-sizing: border-box;
