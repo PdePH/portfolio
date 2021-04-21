@@ -26,7 +26,7 @@ h2, h3 {
     align-items: center;
     background-color: var(--second-color);
     width: 100%;
-    border-bottom: 1rem solid #000;   
+    border-bottom: 1rem solid #000;
 }
 
 .header-container img {
@@ -98,7 +98,7 @@ h2, h3 {
     padding-left: 8.5rem;
 }
 
-.main-banner .banner-wrapper {
+.main-banner .banner-container {
     display: flex;
     flex-direction: column;
     max-width: 40rem;
@@ -158,11 +158,11 @@ h2, h3 {
 
 /*======= SKILLS-SECTION =======*/
 
-.skills-container {
+.main-skills {
     border-bottom: 1rem solid var(--third-color);
 }
 
-.skills-container h2 {
+.main-skills h2 {
     text-align: center;
     color: var(--second-color);
     font-size: 6rem;
@@ -175,9 +175,9 @@ h2, h3 {
     justify-content: center;
 }
 
-/* wrapper-skills */
+/* skills-container */
 
-.wrapper-skills {
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -225,16 +225,90 @@ h2, h3 {
     background-color: #fff;
 }
 
+
+/*======= PROJECTS =======*/
+
+
+.main-project {
+    background-color: var(--second-color);
+}
+.main-project h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 6rem;
+    text-shadow: none;
+    padding-top: 3rem;
+}
+
+/* card-container */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 8rem 0;
+    margin-top: 3rem;
+    border-bottom: 1rem #000 solid;
+    
+}
+
+.card-container a {
+    width: 32rem;
+    max-width: 160px;
+    margin: auto;
+    text-decoration: none;
+    margin-bottom: 4rem; 
+}
+
+.card-container figure {
+    margin: 0;
+    position: relative;
+    max-width: 16rem;
+    text-align: center;
+}
+
+.card-container figure figcaption {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 2rem;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    max-height: 16rem;
+    opacity: 0;
+    transition-duration: 0.8s;
+}
+
+.card-container figure:hover figcaption {
+    opacity: 1;
+}
+
+
+
 /*======= QUERIES =======*/
 
 @media (max-width: 768px) {
     html {
         font-size: 46.875%; /* 7.5px */
     }
-    img {
+
+/* header */
+
+    .header-container img {
         max-width: 3rem;
         max-height: 3rem;
     }
+
+/* cards */
+
+    .card-container figure figcaption {
+        position: inherit;
+        opacity: 1;
+        width: 32rem;
+        max-width: 160px;
+        background-color: #000;
+    }
+
 }
 
 @media (max-width: 600px) {
