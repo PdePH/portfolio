@@ -13,13 +13,11 @@ menuToggle.addEventListener("click", () => {
     show = !show;
 })
 
-const menuNav = document.querySelector(".main-action")
+const menuNav = document.getElementById("nav-action")
 
 menuNav.addEventListener("click", () => {
 
     document.body.style.overflow = show ? "hidden" : "initial"
 
     menuSection.classList.toggle("on", show)
-    show = !show;
-
 })
