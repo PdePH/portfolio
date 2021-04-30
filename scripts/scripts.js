@@ -11,13 +11,32 @@ menuToggle.addEventListener("click", () => {
 
     menuSection.classList.toggle("on", show)
     show = !show;
+
+    const menuNav = document.getElementById("nav-action")
+
+        menuNav.addEventListener("click", () => {
+
+        document.body.style.overflow = show ? "hidden" : "initial"
+
+        menuSection.classList.toggle("on", show)
+        })
 })
 
-const menuNav = document.getElementById("nav-action")
+// main-carousel
 
-menuNav.addEventListener("click", () => {
+const buttonRight = document.querySelector('.button-arrow.-right');
+const buttonLeft = document.querySelector('.button-arrow.-left');
+const elements = document.querySelector('.elements');
+let pixels = 0;
 
-    document.body.style.overflow = show ? "hidden" : "initial"
+buttonRight.addEventListener('click', function() {
+    if (pixels == -80) { return; } 
+    else { pixels = pixels - 10; }
+    elements.style = `transform: translateX(${pixels}rem);`;
+});
 
-    menuSection.classList.toggle("on", show)
-})
+buttonLeft.addEventListener('click', function() {
+    if (pixels == 0) { return; } 
+    else { pixels = pixels + 10; }
+    elements.style = `transform: translateX(${pixels}rem);`;
+});
