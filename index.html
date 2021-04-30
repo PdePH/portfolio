@@ -143,6 +143,22 @@
         </div>
     </section>
 
+    <form id="contact" class="main-form" action="https://formspree.io/f/xjvpnney" method="POST">
+        <h2 class="main-title">Contact</h2>
+
+        <label class="main-label" for="input-name">Name</label>
+        <input class="main-input" id="input-name" name="name" type="text" required>
+
+        <label class="main-label" for="input-email">Email</label>
+        <input class="main-input" id="input-email" name="_replyto" type="email" placeholder="example@example.com" required>
+
+        <label class="main-label" for="input-text-area">Message</label>
+        <textarea class="main-input -textarea" name="message" id="input-text-area" required></textarea>
+        <div id="status"></div>
+        <button class="main-button -form-submit" type="submit">SUBMIT</button>
+
+    </form>
+
     <script src="scripts/scripts.js"></script>
     
 </body>
