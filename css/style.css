@@ -94,7 +94,7 @@ h2, h3 {
 /*======== BANNER ========*/
 
 .main-banner {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     background-size: 100%;
     border-bottom: 1rem solid var(--main-color);
@@ -187,7 +187,7 @@ h2, h3 {
     justify-content: center;
     margin-bottom: 3rem;
     margin-top: 3rem;
-    max-width: 100rem;
+    max-width: 105rem;
 }
 
 /* skills-tec */
@@ -234,25 +234,26 @@ h2, h3 {
     width: 39rem;
     position: relative;
     display: block;
-    padding: 5px;
-    font-size: 16px;
-    line-height: 16px;
-    border-radius: 30px;
+    padding: 0.6rem;
+    font-size: 2.13px;
+    line-height: 2.13px;
+    border-radius: 4rem;
+    border: #000 0.5rem solid;
     background: rgba(0,0,0,0.1);
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), 0 1px rgba(255,255,255,0.8);
+    box-shadow: inset 0 0.13rem 0.26rem rgba(0,0,0,0.25), 0 0.13rem rgba(255,255,255,0.8);
 }
 
 .animation-bar span {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    height: 20px;
-    border-radius: 10px 0 0 10px;
+    height: 2.66rem;
+    border-radius: 1.33rem 0 0 1.33rem;
     overflow: hidden;
-    background-color: #f56982;
+    background-color: var(--main-color);
     background-size: 100%;
-    background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
-    animation: progress-bar 6s infinite ease;
+    background-image: linear-gradient(to bottom, var(--main-color), #BF750D);
+    animation: progress-bar 11s infinite ease;
 }
 
 .animation-bar span::after {
@@ -270,7 +271,7 @@ h2, h3 {
                                                 #fff 75%,
                                                 rgba(0,0,0,0) 75%,
                                                 rgba(0,0,0,0));
-    background-size: 30px 30px;
+    background-size: 3.99rem 3.99rem;
     opacity: 0.3;
     animation: progress-bar-after 0.5s infinite linear;
 }
@@ -289,7 +290,7 @@ h2, h3 {
         background-position: 0 100%;
     }
     100% {
-        background-position: 30px 100%;
+        background-position: 3.99rem 100%;
     }
 }
 
@@ -299,21 +300,23 @@ h2, h3 {
     width: 40rem;
     position: relative;
     display: block;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 2.13rem;
+    line-height: 2.13rem;
+    padding: 0.6rem;
     background: rgba(0,0,0,0.1);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 1px rgba(255,255,255,0.8);
+    border: #000 0.5rem solid;
+    box-shadow: 0 0.13rem 0.26rem rgba(0,0,0,0.25), 0 0.13rem rgba(255,255,255,0.8);
 }
 
 .animation-bar2 span {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    height: 20px;
+    height: 2.66rem;
     background-color: #00e6e7;
     background-size: 100%;
-    background-image: linear-gradient(to bottom, #00b3b4, #008081);
-    animation: progress-bar2 12s infinite ease;
+    background-image: linear-gradient(to bottom, var(--main-color), #E58C10);
+    animation: progress-bar2 11s infinite ease;
 }
 
 .animation-bar2 span::before {
@@ -323,10 +326,10 @@ h2, h3 {
     display: inline-block;
     width: 0;
     height: 0;
-    border: 10px solid transparent;
+    border: 1.33rem solid transparent;
     border-right-width: 0;
     border-bottom-width: 0;
-    border-top-color: rgba(0,0,0,1);
+    border-top-color: var(--second-color);
     content: "";
 
 }
@@ -334,14 +337,14 @@ h2, h3 {
 .animation-bar2 span::after {
     position: absolute;
     right: 0;
-    bottom: calc(100% + 5px);
+    bottom: calc(100% + 0.65rem);
     z-index: 1;
     display: inline-block;
     content: attr(data-label);
-    padding: 5px;
-    border-radius: 3px;
-    font-size: 1rem;
-    background-color: rgba(0,0,0,1);
+    padding: 0.66rem;
+    border-radius: 0.39rem;
+    font-size: 1.83rem;
+    background-color: var(--second-color);
     color: #fff;
 }
 
