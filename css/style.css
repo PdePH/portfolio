@@ -94,7 +94,7 @@ h2, h3 {
 /*======== BANNER ========*/
 
 .main-banner {
-    background-image: url(../img/banner.png);
+    background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     border-bottom: 1rem solid var(--main-color);
