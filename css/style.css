@@ -204,129 +204,59 @@ h2, h3 {
 }
 
 .skills-tec .title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: #fff;
     background-color: #000;
     font-size: 3rem;
     padding-left: 1rem;
 }
 
-/* progress-bar */
-
-.progress-bar {
-    width: 40rem;
-    background-color: #fff;
-    border: 0.5rem solid #000;
-    height: 4rem;
-    box-sizing: border-box;
+.skills-tec .title .title-img {
+    display: inline-flex;
+    vertical-align: middle;
+    padding-left: 4rem;
 }
 
-.progress-bar::-webkit-progress-value {
-    background-color: var(--main-color)
-}
-
-.progress-bar::-webkit-progress-bar {
-    background-color: #fff;
+.skills-tec .title img {
+    width: 3.8rem;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 /*======= Progress Bar =======*/
+
 .animation-bar {
     width: 39rem;
     position: relative;
     display: block;
-    padding: 0.6rem;
-    font-size: 2.13px;
-    line-height: 2.13px;
-    border-radius: 4rem;
-    border: #000 0.5rem solid;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 0.5rem;
     background: rgba(0,0,0,0.1);
-    box-shadow: inset 0 0.13rem 0.26rem rgba(0,0,0,0.25), 0 0.13rem rgba(255,255,255,0.8);
+    border: #000 0.5rem solid;
+    box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.25), 0 0.1rem rgba(255,255,255,0.8);
 }
 
 .animation-bar span {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    height: 2.66rem;
-    border-radius: 1.33rem 0 0 1.33rem;
-    overflow: hidden;
-    background-color: var(--main-color);
-    background-size: 100%;
-    background-image: linear-gradient(to bottom, var(--main-color), #BF750D);
-    animation: progress-bar 11s infinite ease;
-}
-
-.animation-bar span::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    background-size: 100%;
-    background-image: linear-gradient(45deg, #fff 25%, 
-                                                rgba(0,0,0,0) 25%,
-                                                rgba(0,0,0,0) 50%,
-                                                #fff 50%,
-                                                #fff 75%,
-                                                rgba(0,0,0,0) 75%,
-                                                rgba(0,0,0,0));
-    background-size: 3.99rem 3.99rem;
-    opacity: 0.3;
-    animation: progress-bar-after 0.5s infinite linear;
-}
-
-@keyframes progress-bar {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 95%;
-    }
-}
-
-@keyframes progress-bar-after {
-    0% {
-        background-position: 0 100%;
-    }
-    100% {
-        background-position: 3.99rem 100%;
-    }
-}
-
-/*======= Progress Bar 2 =======*/
-
-.animation-bar2 {
-    width: 40rem;
-    position: relative;
-    display: block;
-    font-size: 2.13rem;
-    line-height: 2.13rem;
-    padding: 0.6rem;
-    background: rgba(0,0,0,0.1);
-    border: #000 0.5rem solid;
-    box-shadow: 0 0.13rem 0.26rem rgba(0,0,0,0.25), 0 0.13rem rgba(255,255,255,0.8);
-}
-
-.animation-bar2 span {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    height: 2.66rem;
-    background-color: #00e6e7;
+    height: 2rem;
+    background-color: var(--third-color);
     background-size: 100%;
     background-image: linear-gradient(to bottom, var(--main-color), #E58C10);
-    animation: progress-bar2 11s infinite ease;
+    animation: progress-bar 11s 1 ease;
 }
 
-.animation-bar2 span::before {
+.animation-bar span::before {
     position: absolute;
     right: 0;
     bottom: 100%;
     display: inline-block;
     width: 0;
     height: 0;
-    border: 1.33rem solid transparent;
+    border: 1rem solid transparent;
     border-right-width: 0;
     border-bottom-width: 0;
     border-top-color: var(--second-color);
@@ -334,26 +264,26 @@ h2, h3 {
 
 }
 
-.animation-bar2 span::after {
+.animation-bar span::after {
     position: absolute;
     right: 0;
-    bottom: calc(100% + 0.65rem);
+    bottom: calc(100% + 0.2rem);
     z-index: 1;
     display: inline-block;
     content: attr(data-label);
-    padding: 0.66rem;
-    border-radius: 0.39rem;
-    font-size: 1.83rem;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    font-size: 1.6rem;
     background-color: var(--second-color);
     color: #fff;
 }
 
-@keyframes progress-bar2 {
+@keyframes progress-bar {
     0% {
-        width: 5%;
+        width: 10%;
     }
     100% {
-        width: 100%;
+        width: 90%;
     }
 }
 
